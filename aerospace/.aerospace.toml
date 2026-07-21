@@ -129,20 +129,26 @@ alt-shift-minus = 'resize smart -200'
 alt-shift-equal = 'resize smart +200'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1'
+alt-1 = [
+    'workspace 1',
+    '''exec-and-forget open -g -a "Zen" '''
+]
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
 alt-5 = 'workspace 5'
-alt-c = 'workspace C'
+alt-c = [
+    'workspace C',
+    '''exec-and-forget open -g -a "WezTerm" '''
+]
 alt-n = 'workspace N'
 alt-m = [
   'workspace M',
-  '''exec-and-forget osascript -e 'tell application "Spotify" to activate' ''',
+  '''exec-and-forget open -g -a "Spotify" '''
 ]
 alt-s = [
     'workspace S',
-    '''exec-and-forget osascript -e 'tell application "QSpace Pro" to activate' '''
+    '''exec-and-forget open -g -a "QSpace Pro" '''
 ]
 
 
