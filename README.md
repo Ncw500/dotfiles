@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 Personal macOS configuration files for window management, terminal, and Chinese input.
 
