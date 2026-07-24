@@ -144,11 +144,11 @@ alt-c = [
 alt-n = 'workspace N'
 alt-m = [
     'workspace M',
-    '''exec-and-forget open -g -a "Spotify" '''
+    '''exec-and-forget open -a "Spotify" '''
 ]
 alt-s = [
     'workspace S',
-    '''exec-and-forget open -g -a "QSpace Pro" '''
+    '''exec-and-forget open -a "Marta" '''
 ]
 
 
@@ -165,9 +165,7 @@ alt-shift-s = 'move-node-to-workspace S'
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
-alt-tab = 'workspace-back-and-forth'
-# See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-alt-shift-tab = ['move-workspace-to-monitor --wrap-around next']
+alt-shift-tab = 'workspace-back-and-forth'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
@@ -204,7 +202,15 @@ run = 'move-node-to-workspace C'
 
 # System
 [[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'move-node-to-workspace S'
+
+[[on-window-detected]]
 if.app-id = 'com.jinghaoshe.qspace.pro'
+run = 'move-node-to-workspace S'
+
+[[on-window-detected]]
+if.app-id = 'org.yanex.marta'
 run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
