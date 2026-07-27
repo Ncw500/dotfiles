@@ -123,10 +123,8 @@ NU_DIR="$HOME/Library/Application Support/nushell"
 mkdir -p "$NU_DIR"
 ln -sf  "$(pwd)/nushell/config.nu" "$NU_DIR/config.nu"
 ln -sfn "$(pwd)/nushell/modules"   "$NU_DIR/modules"
-ln -sf  "$(pwd)/nushell/env.nu"    "$NU_DIR/env.nu"   # PATH setup; optional if you keep a local env.nu
+ln -sf  "$(pwd)/nushell/env.nu"    "$NU_DIR/env.nu"
 ```
-
-Current layout on this machine: `config.nu` and `modules` are symlinks into this repo; `history.txt` / `vendor/` stay local under `$NU_DIR`.
 
 ## Starship
 
