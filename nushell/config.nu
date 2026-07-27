@@ -1,7 +1,7 @@
-# Commonly Aliases
-alias l = ls
-alias ll = ls -l
-alias la = ls -a
-alias lla = ls -la
+# Core settings
+$env.config.show_banner = false
+$env.config.buffer_editor = "nvim"
 
-alias c = clear
+# Load modules
+use modules/aliases.nu *
+use modules/starship.nu *
