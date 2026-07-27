@@ -4,4 +4,4 @@ $env.config.buffer_editor = "nvim"
 
 # Load modules
 use modules/aliases.nu *
-use modules/starship.nu *
+use modules/tools.nu *
