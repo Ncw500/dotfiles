@@ -34,8 +34,10 @@ let extra_paths = [
   "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
   "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
   "/opt/pmk/env/global/bin"
+  "/opt/local/bin"
+  "/opt/local/sbin"
   "/Library/Apple/usr/bin"
   "/Library/TeX/texbin"
 ]
 
-$extra_paths | each { |p| path add $p }
+$env.PATH = ($extra_paths | append $env.PATH | uniq)
