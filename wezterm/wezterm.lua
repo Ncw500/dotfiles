@@ -29,6 +29,16 @@ config.color_scheme = 'Afterglow (Gogh)'
 config.font = wezterm.font 'JetBrainsMonoNL Nerd Font'
 config.font_size = 20
 
+-- Keybinding
+config.keys = {
+  {
+    -- Disable toggle full screen
+    key = 'Enter',
+    mods = 'ALT|OPT|META',
+    action = wezterm.action.DisableDefaultAssignment,
+  }
+}
+
 -- Return configuration object to wezterm
 return config
 
