@@ -17,6 +17,7 @@ let extra_paths = [
   $"($nu.home-dir)/flutter/bin"
   $"($nu.home-dir)/Library/Application Support/JetBrains/Toolbox/scripts"
   $"($nu.home-dir)/.x-cmd.root/local/data/triarii/bin"
+  "/Applications/Ghostty.app/Contents/MacOS"
 
   # --- Homebrew ---
   "/opt/homebrew/opt/postgresql@17/bin"

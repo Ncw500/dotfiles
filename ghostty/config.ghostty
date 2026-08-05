@@ -1,0 +1,15 @@
+# General style
+background-opacity = 0.8
+background-opacity-cells = true
+background-blur = 20
+
+# Padding
+window-padding-x = 20
+window-padding-y = 20
+
+# Color scheme
+theme = Afterglow
+
+# Font
+font-family = JetBrainsMonoNL Nerd Font
+font-size = 20
